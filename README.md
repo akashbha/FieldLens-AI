@@ -4,6 +4,10 @@
 Developed for the **Snapdragon AI Lab Build & Present Challenge by Qualcomm**  
 Optimized for **Snapdragon-powered HP Windows PCs (Snapdragon X Elite / X Plus)**
 
+[![Live Demo](https://img.shields.io/badge/🚀%20Live%20Demo-fieldlens--ai.onrender.com-blue?style=for-the-badge)](https://fieldlens-ai-1.onrender.com/)
+
+> **🌐 Live Deployment:** [https://fieldlens-ai-1.onrender.com/](https://fieldlens-ai-1.onrender.com/)
+
 ---
 
 ## 1. Problem Statement
