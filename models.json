@@ -1,0 +1,52 @@
+{
+  "system": {
+    "target_platform": "Snapdragon-powered HP Windows PCs",
+    "target_hardware": "Qualcomm Snapdragon X Elite / X Plus Compute Platform",
+    "accelerator": "Qualcomm Hexagon NPU (45 TOPS)",
+    "operating_system": "Windows 11 ARM64",
+    "optimization_target": "Zero-cloud, high-efficiency local quantized inference"
+  },
+  "providers": {
+    "active": "development",
+    "available": ["qualcomm", "local", "development"]
+  },
+  "models": {
+    "vision": {
+      "provider": "qualcomm",
+      "model_id": "yolov8x-cls-industrial-quantized",
+      "qualcomm_ai_hub_id": "qualcomm/yolov8x-seg-snapdragon",
+      "runtime": "QNN / Qualcomm AI Runtime (Hexagon Direct)",
+      "device": "NPU",
+      "precision": "INT8 / W8A8",
+      "fallback_model": "gemini-3.8-flash"
+    },
+    "language": {
+      "provider": "qualcomm",
+      "model_id": "qwen3-4b-instruct-quantized",
+      "qualcomm_ai_hub_id": "qualcomm/qwen3-4b-chat-npu",
+      "runtime": "GenieX / ONNX Runtime QNN Execution Provider",
+      "device": "NPU",
+      "precision": "INT4 / W4A16",
+      "context_window": 4096,
+      "fallback_model": "gemini-3.8-flash"
+    },
+    "speech": {
+      "provider": "qualcomm",
+      "model_id": "distil-whisper-small-quantized",
+      "qualcomm_ai_hub_id": "qualcomm/distil-whisper-en-snapdragon",
+      "runtime": "Qualcomm AI Runtime (SNPE / QNN)",
+      "device": "NPU",
+      "precision": "INT8",
+      "fallback_model": "browser-speech-api"
+    },
+    "embeddings": {
+      "provider": "qualcomm",
+      "model_id": "bge-small-en-v1.5-quantized",
+      "qualcomm_ai_hub_id": "qualcomm/bge-small-onnx-npu",
+      "runtime": "DirectML / QNN EP",
+      "device": "NPU",
+      "dimension": 384,
+      "fallback_model": "local-minilm"
+    }
+  }
+}

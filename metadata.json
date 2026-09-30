@@ -1,0 +1,9 @@
+{
+  "name": "FieldLens AI - Private On-Device AI for Equipment Inspection",
+  "description": "Private on-device AI assistant optimized for Snapdragon HP Windows PCs for equipment inspection, visual defect analysis, technical manual RAG, and maintenance guidance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
+
